@@ -1,0 +1,46 @@
+#navbar{
+    /* border: 1px solid red; */
+    display: flex;
+    color: white;
+    background-color:green;
+    justify-content: space-between;
+}
+.row2{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.row2>a{
+    text-decoration: none;
+    color: white;
+}
+.row1>a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* Registraion Form */
+
+
+#form{
+ font-size: larger;
+ width: 25%;
+ margin: 10% auto 10% auto;
+}
+
+#registration_form{
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; ;
+padding: 10%;
+}
+
+.register_button{
+    background-color: blue;
+    color: white;
+    font-size: large;
+    font-weight: bolde;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 30%;
+}

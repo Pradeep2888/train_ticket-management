@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket Booking</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/otp.css" />
+</head>
+<body>
+    <Navbar id="navbar">
+        <div class="row1">
+           <a href="../index.html"><h3>Home</h3></a>
+        </div>
+
+        <div class="row2">
+           <a href="./dashboard.html" ><h3>Dashboard Page</h3></a>
+           <a href="./booking.html" ><h3>Booking Page</h3></a>
+        </div>
+
+   </Navbar>
+
+
+   <div id="otp_card">
+        
+       <h1>OTP Verification Page....</h1>
+
+    <input type="number" id="first_input" maxlength="1"
+     onkeyup="appotp(this,'second_input',0)" 
+     />
+
+    <input type="number" id="second_input" maxlength="1"
+     onkeyup="appotp(this,'third_input',1)" 
+     onkeydown="deleteotp(event,'first_input')"
+     />
+
+    <input type="number" id="third_input" maxlength="1"
+     onkeyup="appotp(this,'forth_input',2)" 
+     onkeydown="deleteotp(event,'second_input')"
+     />
+
+    <input type="number" id="forth_input" maxlength="1"
+    onkeyup="appotp(this,'stop_input',3)" 
+     onkeydown="deleteotp(event,'third_input')"
+     />
+     <br/>
+     <button id="submit_input">Submit</button>
+     
+   </div>
+
+
+
+
+</body>
+</html>
+
+<script src="../scripts/otp.js" ></script>

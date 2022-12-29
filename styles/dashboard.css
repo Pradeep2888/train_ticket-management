@@ -1,0 +1,19 @@
+#user_Data{
+    display: grid;
+    gap: 1%;
+    grid-template-columns: repeat(3,auto);
+    margin-top: 5%;
+}
+#user_Data>div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* border: 1px solid red; */
+    padding:5%;
+    background-color: beige;
+}
+#reject{
+    background-color: red;
+    margin-right: 1%;
+}
+#confirm{
+    background-color: green;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+   <link rel="stylesheet" href="../styles/dashboard.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket Booking</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+</head>
+<body>
+   <Navbar id="navbar">
+      <div class="row1">
+         <a href="../index.html"><h3>Home</h3></a>
+      </div>
+
+      <div class="row2">
+         <a href="./dashboard.html" ><h3>Dashboard Page</h3></a>
+         <a href="./booking.html" ><h3>Booking Page</h3></a>
+      </div>
+
+ </Navbar>
+
+ <filter id="filter" >
+   
+  <form id="filter_dashboard" >
+   
+   <label for="journey_date">Journey Date</label>
+   <input type="date"  class="date"/>
+
+   <label for="age">Age</label>
+   <input type="number" min=18 max=40 class="age"/>
+   
+   <label for="seat_type">Seat Type</label>
+   <select class="seat_type">
+      <option value="">Seat Type</option>
+      <option value="acfirstclass">AC First Class</option>
+      <option value="sleeperclass">Sleeper Class</option>
+      <option value="secondclass">Second Class</option>
+      <option value="gernal">General</option>
+  </select>
+  
+   <input type="submit" value="Filter" class="filter">
+
+  </form>
+    
+ </filter>
+   
+
+
+ <div id="user_Data"></div>
+
+
+
+
+
+</body>
+</html>
+
+<script src="../scripts/dashboard.js" ></script>

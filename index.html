@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket Booking</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+   
+</head>
+<body>
+    <Navbar id="navbar">
+         <div class="row1">
+            <a href="./index.html"><h3>Home</h3></a>
+         </div>
+
+         <div class="row2">
+            <a href="./Pages/dashboard.html" ><h3>Dashboard Page</h3></a>
+            <a href="./Pages/booking.html" ><h3>Booking Page</h3></a>
+         </div>
+
+    </Navbar>
+
+
+    <!-- Registration form -->
+    <div id="form" >
+
+<form id="registration_form"  >
+    <label for="userid">User id:</label>
+    <input type="number" placeholder="Unique Id" required  class="user_id" />
+    
+    <br/>
+
+    <label for="name">Name:</label>
+    <input type="text" placeholder="name"  class="user_name" />
+     
+
+    <br/>
+
+    <label for="user age" >Age:</label>
+    <input type="number" placeholder="Age" min=18 max=40 required class="user_age" />
+
+    <br/>
+
+    <label for="fromstation">From Station:</label>
+    <select required class="from_station" >
+        <option  value="">Select Station</option>
+        <option value="banglore">Banglore</option>
+        <option value="pune">Pune</option>
+        <option value="hyderabad">Hyderabad</option>
+        <option value="delhi">Delhi</option>
+        <option value="mumbai">Mumbai</option>
+    </select>
+
+    <br/>
+
+
+    <label for="fromstation">To Station:</label>
+    <select required class="to_station">
+        <option  value="">Select Station</option>
+        <option value="banglore">Banglore</option>
+        <option value="pune">Pune</option>
+        <option value="hyderabad">Hyderabad</option>
+        <option value="delhi">Delhi</option>
+        <option value="mumbai">Mumbai</option>
+    </select>
+    
+    <br/>
+    
+    <label for="journey_date">Journey Date</label>
+    <input type="date" required class="date"/>
+    
+    <br/>
+
+    <label for="seat_type">Seat Type:</label>
+    <select required class="seat_type">
+        <option value="">Seat Type</option>
+        <option value="acfirstclass">AC First Class</option>
+        <option value="sleeperclass">Sleeper Class</option>
+        <option value="secondclass">Second Class</option>
+        <option value="gernal">General</option>
+    </select>
+
+    <br/>
+
+    <input class="register_button" type="submit" value="Register"/>
+</form>
+
+
+</div>
+
+
+</body>
+</html>
+<script src="./scripts/index.js" ></script>

@@ -1,0 +1,21 @@
+#otp_card{
+   background-color: aquamarine;
+
+   height: auto;
+   text-align: center;
+   overflow:hidden;
+   padding: 10%;
+}
+#otp_card>input{
+    width: 3%;
+    color: red;
+      font-size: larger;
+ 
+}
+
+#submit_input{
+    margin-top: 5%;
+    font-size: larger;
+    color: blue;
+    background-color: yellowgreen;
+}
